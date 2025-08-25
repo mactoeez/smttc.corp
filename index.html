@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMTCC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="new_logo-removebg-preview.png">
+</head>
+<body>
+
+  <!-- ==================== Navigation ==================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo-container">
+        <img src="new_logo-removebg-preview.png" alt="Logo" class="nav-logo-img">
+        <span class="nav-logo-text">Shri Mahesh Timber Trading Company</span>
+      </div>
+      <button id="navToggle" class="nav-toggle">☰</button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== Home ==================== -->
+  <section id="home" class="section home">
+    <h1>Shri Mahesh Timber Trading Company</h1>
+    <p>We are a trusted supplier of high-quality timber, plywood, flush doors, and packaging boxes. With years of experience, we serve industries with durable products and custom solutions.</p>
+  </section>
+
+  <!-- ==================== About Us ==================== -->
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>Serving quality & trust for over 55 years, Shri Mahesh Timber Trading Company is a trusted name in the timber and plywood industry. We specialize in high-quality wood and plywood products tailored to industrial, commercial, and residential needs. Our commitment to timely delivery, precision, and ethical business practices has made us one of the most trusted suppliers in the region.</p>
+  </section>
+
+  <!-- ==================== Our Services ==================== -->
+  <section class="cards-section">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Plywood Packaging Boxes</h3>
+        <p>Durable, custom-built solutions for the safe transportation of heavy machinery and delicate equipment.</p>
+      </div>
+      <div class="card">
+        <h3>Flush Doors</h3>
+        <p>Strong, smooth-finish doors combining durability with modern aesthetics for homes, offices, and institutions.</p>
+      </div>
+      <div class="card">
+        <h3>Teakwood Doors (Sagwan Doors)</h3>
+        <p>Premium-quality teakwood doors, known for strength, elegance, and termite resistance, adding timeless value.</p>
+      </div>
+      <div class="card">
+        <h3>Plywood & Teakwood Cutsizes</h3>
+        <p>Superior-grade sheets in various cutsizes, ensuring durability and flexibility for furniture, interiors, and construction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Our Products Carousel ==================== -->
+  <section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="slide"><img src="/flushdoor.jpg" alt="Flush Door" class="zoomable"><p>Flush Door</p></div>
+        <div class="slide"><img src="/flushdoor1.jpg" alt="Flush Door" class="zoomable"><p>Flush Door</p></div>
+        <div class="slide"><img src="/flushdoor2.jpg" alt="Flush Door" class="zoomable"><p>Flush Door</p></div>
+        <div class="slide"><img src="/plybox.jpg" alt="Machinery" class="zoomable"><p>Machinery Packaging Boxes</p></div>
+        <div class="slide"><img src="/plybox1.jpg" alt="Packaging Boxes" class="zoomable"><p>Machinery Packaging Boxes</p></div>
+        <div class="slide"><img src="/plywood.jpg" alt="Plywood Sheet" class="zoomable"><p>Plywood Sheet</p></div>
+        <div class="slide"><img src="/plywood1.jpg" alt="Plywood" class="zoomable"><p>Plywood</p></div>
+        <div class="slide"><img src="/ripla.jpg" alt="Ripla" class="zoomable"><p>Ripla</p></div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="prev" id="prevBtn">&#10094;</button>
+      <button class="next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <!-- Modal / Zoom -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+    </div>
+  </section>
+
+  <!-- ==================== Portfolio / PDF Viewer ==================== -->
+  <section id="portfolio" class="section portfolio">
+    <h2>Portfolio</h2>
+    <div class="pdf-viewer">
+      <h3>Pitch / Sales Deck</h3>
+      <iframe src="/file-example_PDF_1MB.pdf" allowfullscreen>
+        Your browser does not support iframes. 
+        You can <a href="/file-example_PDF_1MB.pdf" target="_blank">download the PDF</a>.
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ==================== Contact ==================== -->
+  <section id="contact" class="section contact">
+    <h2>Reach Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <p>&copy; 2025 Shri Mahesh Timber Trading Company | 153/2 GNT Market Dhar Road, Indore (M.P.) | +91-9479930227</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
